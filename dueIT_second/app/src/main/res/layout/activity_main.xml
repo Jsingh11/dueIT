@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="308dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="92dp"
+        android:text="dueIT Logo"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/dailyTaskButton"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:text="Daily Task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Button
+        android:id="@+id/weeklyTaskButton"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:text="Weekly Task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyTaskButton"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Button
+        android:id="@+id/monthlyTaskButton"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:text="Monthly Task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weeklyTaskButton"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:text="Quote"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyTaskButton"
+        app:layout_constraintVertical_bias="0.158"
+        android:gravity="center_horizontal" />
+
+    <ImageButton
+        android:id="@+id/fab"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/add_task_icon"
+        android:layout_marginRight="4dp" />
+
+    <ImageButton
+        android:id="@+id/calenderButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/calender_icon"
+        android:layout_marginLeft="4dp" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/calenderButton"
+        app:srcCompat="@drawable/profile_icon"
+        android:layout_marginLeft="108dp" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addTaskButton"
+        app:layout_constraintStart_toEndOf="@+id/profileButton"
+        app:srcCompat="@drawable/settings_icon" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
