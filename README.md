@@ -20,6 +20,7 @@
 	- If data is in this month -> display in monthly activity
 - Then after figuring all of that out:
 	- How will we grab the priority and display it differently? how to do that java wise
+- Need to dissect chiccas code to see how creating notes works, but cant get it to run on my computer, if one of you guys could figure it out would help a ton
 - Also final thing, I made this at API level 15 bc its what it defaulted to. idk how impactful that will be in the future
 
 
