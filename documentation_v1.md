@@ -2,6 +2,7 @@
 
 ---
 gitHub with most updated information including this document: <https://github.com/Jsingh11/dueIT>
+Link to presentation: <https://youtu.be/StnLWD3glxI>
 
 ### Breakdown: 
 
