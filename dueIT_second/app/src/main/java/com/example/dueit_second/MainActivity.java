@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -103,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
         // by ID we can use each component which id is assign in xml file
         // use findViewById() to get the Button
-        ImageButton fab = (ImageButton) findViewById(R.id.fab);
+        ImageButton fab = (ImageButton) findViewById(R.id.addTaskButton);
 
 
         // In question1 get the TextView use by findViewById()
@@ -129,4 +130,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.appbar_menu, menu);
+        return true;
+    }
+
 }
