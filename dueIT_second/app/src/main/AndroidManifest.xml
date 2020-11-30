@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".monthlyDetailsActivity"></activity>
         <activity android:name=".fabActivity" />
-        <activity android:name=".monthlyActivity" />
-        <activity android:name=".weeklyActivity" />
-        <activity android:name=".dailyActivity" />
+        <activity android:name=".monthlyListActivity" />
+        <activity android:name=".monthlyDetailsActivity" />
+        <activity android:name=".weeklyListActivity" />
+        <activity android:name=".dailyListActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

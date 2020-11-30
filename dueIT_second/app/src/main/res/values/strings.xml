@@ -1,5 +1,19 @@
 <resources>
-    <string name="app_name">dueIT</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">dueIt</string>
+
+    <string-array name="reminders">
+        <item>Mobile App Project</item>
+        <item>Algorithms Test</item>
+
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Make sure to finish the documentation, \nand to upload to dropbox</item>
+        <item>Study chapters 5, 7, 8. And focus on \'shortest path\'</item>
+
+    </string-array>
+
+
+
+
 </resources>

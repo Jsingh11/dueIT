@@ -27,24 +27,24 @@ public class ReminderDatabase {
         Resources res = context.getResources();
         String[] reminders = res.getStringArray(R.array.reminders);
         String[] descriptions = res.getStringArray(R.array.descriptions);
-        String[] dueDates = res.getStringArray(R.array.dueDates);
-        int[] priorities = res.getIntArray(R.array.priorities);
+//        String[] dueDates = res.getStringArray(R.array.dueDates);
+//        int[] priorities = res.getIntArray(R.array.priorities);
 
         for(int i = 0; i < reminders.length; i++){
-            Date tempDate = new SimpleDateFormat("dd/MM/yyyy").parse(dueDates[i]);
+//            Date tempDate = new SimpleDateFormat("dd/MM/yyyy").parse(dueDates[i]);
 
-            mReminders.add(new Reminder(i+1,reminders[i],descriptions[i],tempDate,priorities[i]));
+            mReminders.add(new Reminder(i+1,reminders[i],descriptions[i]));//,tempDate,priorities[i]));
         }
 
     }
 
-    public List<Reminder> getmReminders() {
+    public List<Reminder> getReminders() {
         return mReminders;
     }
 
     public Reminder getReminder(int reminderId){
         for(Reminder reminder : mReminders){
-            if(reminder.getmId() == reminderId){
+            if(reminder.getId() == reminderId){
                 return reminder;
             }
         }

@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 // to the Android system defining the components you are targeting.
                 // Intent to start an activity called SecondActivity with the following code:
 
-                Intent intent = new Intent(MainActivity.this, dailyActivity.class);
+                Intent intent = new Intent(MainActivity.this, dailyListActivity.class);
 
                 // start the activity connect to the specified class
                 startActivity(intent);
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 // to the Android system defining the components you are targeting.
                 // Intent to start an activity called SecondActivity with the following code:
 
-                Intent intent = new Intent(MainActivity.this, weeklyActivity.class);
+                Intent intent = new Intent(MainActivity.this, weeklyListActivity.class);
 
                 // start the activity connect to the specified class
                 startActivity(intent);
@@ -93,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 // to the Android system defining the components you are targeting.
                 // Intent to start an activity called SecondActivity with the following code:
 
-                Intent intent = new Intent(MainActivity.this, monthlyActivity.class);
+                Intent intent = new Intent(MainActivity.this, monthlyListActivity.class);
 
                 // start the activity connect to the specified class
                 startActivity(intent);

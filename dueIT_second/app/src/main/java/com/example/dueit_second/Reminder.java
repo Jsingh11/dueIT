@@ -8,56 +8,56 @@ public class Reminder {
     private int mId;
     private String mName;
     private String mDescription;
-    private Date mDuedate;
-    private int mPriority;
+//    private Date mDuedate;
+//    private int mPriority;
 
     public Reminder() {}
 
-    public Reminder(int mId, String mName, String mDescription, Date mDuedate, int mPriority) {
-        this.mId = mId;
-        this.mName = mName;
-        this.mDescription = mDescription;
-        this.mDuedate = mDuedate;
-        this.mPriority = mPriority;
+    public Reminder(int Id, String Name, String Description){//, Date Duedate, int Priority) {
+        mId = Id;
+        mName = Name;
+        mDescription = Description;
+//        mDuedate = Duedate;
+//        mPriority = Priority;
     }
 
-    public int getmId() {
+    public int getId() {
         return mId;
     }
 
-    public void setmId(int mId) {
+    public void setId(int mId) {
         this.mId = mId;
     }
 
-    public String getmName() {
+    public String getName() {
         return mName;
     }
 
-    public void setmName(String mName) {
+    public void setName(String mName) {
         this.mName = mName;
     }
 
-    public String getmDescription() {
+    public String getDescription() {
         return mDescription;
     }
 
-    public void setmDescription(String mDescription) {
+    public void setDescription(String mDescription) {
         this.mDescription = mDescription;
     }
 
-    public Date getmDuedate() {
-        return mDuedate;
-    }
-
-    public void setmDuedate(Date mDuedate) {
-        this.mDuedate = mDuedate;
-    }
-
-    public int getmPriority() {
-        return mPriority;
-    }
-
-    public void setmPriority(int mPriority) {
-        this.mPriority = mPriority;
-    }
+//    public Date getDuedate() {
+//        return mDuedate;
+//    }
+//
+//    public void setDuedate(Date mDuedate) {
+//        this.mDuedate = mDuedate;
+//    }
+//
+//    public int getPriority() {
+//        return mPriority;
+//    }
+//
+//    public void setPriority(int mPriority) {
+//        this.mPriority = mPriority;
+//    }
 }
