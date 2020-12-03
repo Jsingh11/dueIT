@@ -1,4 +1,0 @@
-This directory will hold APK files, I will rename them to be APK v1, v2, etc.
-
-But they are all named 'app-debug.apk' initially
-
