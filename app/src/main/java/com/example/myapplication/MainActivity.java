@@ -1,4 +1,5 @@
-package net.penguincoders.doit;
+package com.example.myapplication;
+
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,9 +27,9 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import net.penguincoders.doit.Adapters.ToDoAdapter;
-import net.penguincoders.doit.Model.ToDoModel;
-import net.penguincoders.doit.Utils.DatabaseHandler;
+import com.example.myapplication.Utils.DatabaseHandler;
+import com.example.myapplication.Model.ToDoModel;
+import com.example.myapplication.Controller.ToDoController;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
     public int progressDone = 0;
     public int dbSize = 0;
     private RecyclerView tasksRecyclerView;
-    private ToDoAdapter tasksAdapter;
+    private ToDoController tasksController;
     private FloatingActionButton fab;
     private List<ToDoModel> taskList;
     private ProgressBar progressBar;
@@ -63,11 +64,11 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
 
         tasksRecyclerView = findViewById(R.id.tasksRecyclerView);
         tasksRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        tasksAdapter = new ToDoAdapter(db,MainActivity.this);
-        tasksRecyclerView.setAdapter(tasksAdapter);
+        tasksController = new ToDoController(db,MainActivity.this);
+        tasksRecyclerView.setAdapter(tasksController);
 
         ItemTouchHelper itemTouchHelper = new
-                ItemTouchHelper(new RecyclerItemTouchHelper(tasksAdapter));
+                ItemTouchHelper(new RecyclerItemTouchHelper(tasksController));
         itemTouchHelper.attachToRecyclerView(tasksRecyclerView);
 
         fab = findViewById(R.id.fab);
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
         progressBar = findViewById(R.id.progressBar);
         progressBar.setProgress(progressDone);
 
-        tasksAdapter.setTasks(taskList);
+        tasksController.setTasks(taskList);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,8 +132,8 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
         System.out.println(progressPercent);
         System.out.println(progressDone);
 
-        tasksAdapter.setTasks(taskList);
-        tasksAdapter.notifyDataSetChanged();
+        tasksController.setTasks(taskList);
+        tasksController.notifyDataSetChanged();
         String str = progressDone + "%";
         percentageDisplay = findViewById(R.id.percent);
         percentageDisplay.setText(str);

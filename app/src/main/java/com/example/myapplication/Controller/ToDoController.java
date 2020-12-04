@@ -1,4 +1,5 @@
-package net.penguincoders.doit.Adapters;
+package com.example.myapplication.Controller;
+
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,21 +12,20 @@ import android.widget.CompoundButton;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import net.penguincoders.doit.AddNewTask;
-import net.penguincoders.doit.MainActivity;
-import net.penguincoders.doit.Model.ToDoModel;
-import net.penguincoders.doit.R;
-import net.penguincoders.doit.Utils.DatabaseHandler;
-
+import com.example.myapplication.AddNewTask;
+import com.example.myapplication.MainActivity;
+import com.example.myapplication.Model.ToDoModel;
+import com.example.myapplication.R;
+import com.example.myapplication.Utils.DatabaseHandler;
 import java.util.List;
 
-public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder> {
+public class ToDoController extends RecyclerView.Adapter<ToDoController.ViewHolder> {
 
     private List<ToDoModel> todoList;
     private DatabaseHandler db;
     private MainActivity activity;
 
-    public ToDoAdapter(DatabaseHandler db, MainActivity activity) {
+    public ToDoController(DatabaseHandler db, MainActivity activity) {
         this.db = db;
         this.activity = activity;
     }
@@ -102,3 +102,4 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder> {
         }
     }
 }
+

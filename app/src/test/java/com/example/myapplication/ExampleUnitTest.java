@@ -1,6 +1,6 @@
-package net.penguincoders.doit;
+package com.example.myapplication;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
